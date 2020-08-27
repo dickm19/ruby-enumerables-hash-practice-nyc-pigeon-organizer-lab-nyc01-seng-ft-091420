@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   #Write your code here!
-  final = data.each_with_object({}) do |(key, value), pigeon_list|
+  data.each_with_object({}) do |(key, value), pigeon_list|
     #binding.pry
     value.each do |inner_key, names|
       names.each do |name|
